@@ -1,28 +1,27 @@
 ---@class VclsNeonPalette
 --- Color palette definition for vcls-neon.nvim
---- Main background: Kanagawa (#1F1F28 sumiInk3)
+--- Main background & accents: Jellybeans (#151515)
 --- Foreground: Nightfox (#cdcecf fg1)
---- Other colors: Initial palette values ready to be updated later
 local M = {}
 
 ---@type table
 M.colors = {
   -- =========================================================================
-  -- BACKGROUND COLORS (Kanagawa Wave / Ink shades)
+  -- BACKGROUND COLORS (Jellybeans shades)
   -- =========================================================================
   bg = {
-    main = "#1F1F28",      -- Kanagawa sumiInk3: Primary editor background
-    dark = "#16161D",      -- Kanagawa sumiInk0: Floating windows, popups, sidebars
-    alt = "#181820",       -- Kanagawa sumiInk1: Alternative deep background
-    dim = "#1A1A22",       -- Kanagawa sumiInk2: Inactive / dim background
-    line = "#2A2A37",      -- Kanagawa sumiInk4: CursorLine, fold background
-    selection = "#363646", -- Kanagawa sumiInk5: Visual selection, PmenuSel
-    border = "#54546D",    -- Kanagawa sumiInk6: Window borders, separators
-    float = "#16161D",     -- Floating window background
+    main = "#151515",      -- Jellybeans: Canonical dark charcoal background
+    dark = "#101010",      -- Jellybeans: Popups, statusline, deep dark shade
+    alt = "#121212",       -- Jellybeans: Alternate deep background
+    dim = "#1a1a1a",       -- Jellybeans: Inactive window background
+    line = "#1c1c1c",      -- Jellybeans: CursorLine, CursorColumn
+    selection = "#404040", -- Jellybeans: Visual selection
+    border = "#535d66",    -- Jellybeans: Window borders, VertSplit
+    float = "#1c1c1c",     -- Jellybeans: Floating window background
   },
 
   -- =========================================================================
-  -- FOREGROUND COLORS (Nightfox shades)
+  -- FOREGROUND COLORS (Nightfox shades - PRESERVED)
   -- =========================================================================
   fg = {
     main = "#cdcecf",      -- Nightfox fg1: Default text foreground
@@ -33,41 +32,40 @@ M.colors = {
   },
 
   -- =========================================================================
-  -- ACCENT & SYNTAX COLORS (PLACEHOLDER PALETTE - UPDATE LATER)
+  -- ACCENT & SYNTAX COLORS (Jellybeans palette)
   -- =========================================================================
-  -- Modify these hex codes to adjust syntax highlighting and UI accents:
   accents = {
-    red = "#c94f6d",       -- Errors, exceptions, deletes
-    green = "#81b29a",     -- Strings, additions, success
-    yellow = "#dbc074",    -- Warnings, numbers, special symbols
-    blue = "#719cd6",      -- Functions, methods, titles
-    magenta = "#9d79d6",   -- Statements, operators, keywords
-    cyan = "#63cdcf",      -- Types, builtins, regex
-    orange = "#f4a261",    -- Constants, parameters, tags
-    pink = "#d67ad2",      -- Preprocessors, special identifiers
-    teal = "#7AA89F",      -- Hints, special tags
+    red = "#cf6a4c",       -- Jellybeans red (Constants, errors, exceptions)
+    green = "#99ad6a",     -- Jellybeans green (Strings, additions)
+    yellow = "#fad07a",    -- Jellybeans yellow (Functions, warnings)
+    blue = "#8197bf",      -- Jellybeans blue (Statements, operators)
+    magenta = "#c6b6ee",   -- Jellybeans purple / lavender (Identifiers, keywords)
+    cyan = "#8fbfdc",      -- Jellybeans light cyan / sky blue (Structure, preproc)
+    orange = "#ffb964",    -- Jellybeans amber orange (Types, parameters)
+    pink = "#de5577",      -- Jellybeans pink (Special identifiers, tags)
+    teal = "#799d6a",      -- Jellybeans olive teal (Special chars, hints)
   },
 
   -- =========================================================================
-  -- GIT / VCS COLORS (UPDATE LATER)
+  -- GIT / VCS COLORS (Jellybeans palette)
   -- =========================================================================
   git = {
-    add = "#81b29a",
-    change = "#719cd6",
-    delete = "#c94f6d",
-    dirty = "#dbc074",
-    text = "#71839b",
+    add = "#99ad6a",       -- Jellybeans green
+    change = "#8197bf",    -- Jellybeans blue
+    delete = "#cf6a4c",    -- Jellybeans red
+    dirty = "#fad07a",     -- Jellybeans yellow
+    text = "#71839b",      -- Nightfox subtle
   },
 
   -- =========================================================================
-  -- DIAGNOSTICS COLORS (UPDATE LATER)
+  -- DIAGNOSTICS COLORS (Jellybeans palette)
   -- =========================================================================
   diag = {
-    error = "#c94f6d",
-    warn = "#dbc074",
-    info = "#719cd6",
-    hint = "#63cdcf",
-    ok = "#81b29a",
+    error = "#cf6a4c",     -- Jellybeans red
+    warn = "#fad07a",      -- Jellybeans yellow
+    info = "#8fbfdc",      -- Jellybeans cyan / sky blue
+    hint = "#799d6a",      -- Jellybeans teal
+    ok = "#99ad6a",        -- Jellybeans green
   },
 }
 

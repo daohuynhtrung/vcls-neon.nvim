@@ -1,8 +1,8 @@
-# vcls-neon.nvim 🌊🦊
+# vcls-neon.nvim 🍬🦊
 
 A modern, highly modular Neovim colorscheme written entirely in Lua.
 
-**vcls-neon** blends the iconic ink background of **Kanagawa** (`#1F1F28`) with the crisp, balanced foreground of **Nightfox** (`#cdcecf`). Its modular structure makes it effortless to customize and expand accent, syntax, and plugin colors.
+**vcls-neon** blends the rich, warm dark palette of **Jellybeans** (`#151515`) with the crisp, balanced foreground shades of **Nightfox** (`#cdcecf`). Its modular structure makes it effortless to customize and expand accent, syntax, and plugin colors.
 
 ---
 
@@ -10,15 +10,22 @@ A modern, highly modular Neovim colorscheme written entirely in Lua.
 
 | Role | Color | Hex | Origin |
 | :--- | :--- | :--- | :--- |
-| **Main Background** | ![#1F1F28](https://via.placeholder.com/15/1F1F28/000000?text=+) `#1F1F28` | `#1F1F28` | **Kanagawa** (`sumiInk3`) |
-| **Dark / Floats BG** | ![#16161D](https://via.placeholder.com/15/16161D/000000?text=+) `#16161D` | `#16161D` | **Kanagawa** (`sumiInk0`) |
-| **Line / Fold BG** | ![#2A2A37](https://via.placeholder.com/15/2A2A37/000000?text=+) `#2A2A37` | `#2A2A37` | **Kanagawa** (`sumiInk4`) |
-| **Visual Selection** | ![#363646](https://via.placeholder.com/15/363646/000000?text=+) `#363646` | `#363646` | **Kanagawa** (`sumiInk5`) |
+| **Main Background** | ![#151515](https://via.placeholder.com/15/151515/000000?text=+) `#151515` | `#151515` | **Jellybeans** (main charcoal bg) |
+| **Dark / Popups BG** | ![#101010](https://via.placeholder.com/15/101010/000000?text=+) `#101010` | `#101010` | **Jellybeans** |
+| **Line / Fold BG** | ![#1c1c1c](https://via.placeholder.com/15/1c1c1c/000000?text=+) `#1c1c1c` | `#1c1c1c` | **Jellybeans** (`CursorLine`) |
+| **Visual Selection** | ![#404040](https://via.placeholder.com/15/404040/000000?text=+) `#404040` | `#404040` | **Jellybeans** (`Visual`) |
 | **Main Foreground** | ![#cdcecf](https://via.placeholder.com/15/cdcecf/000000?text=+) `#cdcecf` | `#cdcecf` | **Nightfox** (`fg1`) |
 | **Bright Foreground** | ![#d6d6d7](https://via.placeholder.com/15/d6d6d7/000000?text=+) `#d6d6d7` | `#d6d6d7` | **Nightfox** (`fg0`) |
 | **Muted Foreground** | ![#aeafb0](https://via.placeholder.com/15/aeafb0/000000?text=+) `#aeafb0` | `#aeafb0` | **Nightfox** (`fg2`) |
 | **Subtle / Numbers** | ![#71839b](https://via.placeholder.com/15/71839b/000000?text=+) `#71839b` | `#71839b` | **Nightfox** (`fg3`) |
 | **Comment** | ![#738091](https://via.placeholder.com/15/738091/000000?text=+) `#738091` | `#738091` | **Nightfox** (`comment`) |
+| **Red (Constants/Errors)** | ![#cf6a4c](https://via.placeholder.com/15/cf6a4c/000000?text=+) `#cf6a4c` | `#cf6a4c` | **Jellybeans** |
+| **Green (Strings)** | ![#99ad6a](https://via.placeholder.com/15/99ad6a/000000?text=+) `#99ad6a` | `#99ad6a` | **Jellybeans** |
+| **Yellow (Functions)** | ![#fad07a](https://via.placeholder.com/15/fad07a/000000?text=+) `#fad07a` | `#fad07a` | **Jellybeans** |
+| **Blue (Statements)** | ![#8197bf](https://via.placeholder.com/15/8197bf/000000?text=+) `#8197bf` | `#8197bf` | **Jellybeans** |
+| **Purple (Keywords)** | ![#c6b6ee](https://via.placeholder.com/15/c6b6ee/000000?text=+) `#c6b6ee` | `#c6b6ee` | **Jellybeans** |
+| **Cyan (Types/PreProc)** | ![#8fbfdc](https://via.placeholder.com/15/8fbfdc/000000?text=+) `#8fbfdc` | `#8fbfdc` | **Jellybeans** |
+| **Orange (Types/Amber)** | ![#ffb964](https://via.placeholder.com/15/ffb964/000000?text=+) `#ffb964` | `#ffb964` | **Jellybeans** |
 
 *All syntax accents, Git tokens, and diagnostics are modularly organized in `lua/vcls-neon/palette.lua` for easy updates.*
 
