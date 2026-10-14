@@ -39,7 +39,7 @@ A modern, highly modular Neovim colorscheme written entirely in Lua.
 
 ```lua
 {
-  "vcls-neon.nvim", -- or your repo path e.g. "username/vcls-neon.nvim"
+  "daohuynhtrung/vcls-neon.nvim",
   lazy = false,
   priority = 1000,
   config = function()
@@ -55,7 +55,7 @@ A modern, highly modular Neovim colorscheme written entirely in Lua.
 
 ```lua
 use({
-  "username/vcls-neon.nvim",
+  "daohuynhtrung/vcls-neon.nvim",
   config = function()
     require("vcls-neon").setup()
     vim.cmd.colorscheme("vcls-neon")
