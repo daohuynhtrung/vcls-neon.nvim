@@ -107,11 +107,15 @@ vcls-neon.nvim/
             └── plugins.lua       # Integrations (Telescope, Neo-tree, NvimTree, Cmp, WhichKey, etc.)
 ```
 
-### How to update colors:
+### How to update colors & instant reload:
 
 1. Open [`lua/vcls-neon/palette.lua`](lua/vcls-neon/palette.lua).
-2. Edit values in the `accents`, `git`, or `diag` tables.
-3. If you want to change how a color maps to a syntax item or UI element, edit the corresponding file in `lua/vcls-neon/groups/`.
+2. Edit values in the `accents`, `git`, `diag`, or background/foreground tables.
+3. Instant reload inside Neovim without restarting:
+   - Run `:VclsNeonReload` to immediately apply changes.
+   - Or run `:VclsNeonWatch` once: any time you save (`:w`) a palette or theme file, it will **auto-reload automatically**!
+
+If you want to change how a color maps to a syntax item or UI element, edit the corresponding file in `lua/vcls-neon/groups/`.
 
 ---
 

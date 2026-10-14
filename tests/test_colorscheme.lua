@@ -54,7 +54,12 @@ local number_hl = vim.api.nvim_get_hl(0, { name = "Number" })
 assert(number_hl.fg == hex_to_dec("#FFD700"), "Number fg should reflect overridden yellow")
 print("  ✓ Palette overrides work as expected")
 
--- 7. Reset to default
+-- 7. Test M.reload()
+require("vcls-neon").reload()
+assert(vim.g.colors_name == "vcls-neon", "Theme should still be loaded after reload")
+print("  ✓ M.reload() executes cleanly")
+
+-- 8. Reset to default
 require("vcls-neon").setup({})
 vim.cmd("colorscheme vcls-neon")
 
