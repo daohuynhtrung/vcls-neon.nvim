@@ -9,14 +9,14 @@ print(">>> Starting vcls-neon tests...")
 vim.cmd("colorscheme vcls-neon")
 assert(vim.g.colors_name == "vcls-neon", "vim.g.colors_name should be 'vcls-neon'")
 
--- 2. Verify Normal highlight matches Jellybeans bg (#151515) and Nightfox fg (#cdcecf)
+-- 2. Verify Normal highlight matches Arctic bg (#1f1f1f) and Nightfox fg (#cdcecf)
 local normal_hl = vim.api.nvim_get_hl(0, { name = "Normal" })
-local expected_bg = hex_to_dec("#151515")
+local expected_bg = hex_to_dec("#1f1f1f")
 local expected_fg = hex_to_dec("#cdcecf")
 
-assert(normal_hl.bg == expected_bg, string.format("Normal bg expected %d (#151515), got %s", expected_bg, tostring(normal_hl.bg)))
+assert(normal_hl.bg == expected_bg, string.format("Normal bg expected %d (#1f1f1f), got %s", expected_bg, tostring(normal_hl.bg)))
 assert(normal_hl.fg == expected_fg, string.format("Normal fg expected %d (#cdcecf), got %s", expected_fg, tostring(normal_hl.fg)))
-print("  ✓ Normal highlight matches Jellybeans background (#151515) and Nightfox foreground (#cdcecf)")
+print("  ✓ Normal highlight matches Arctic background (#1f1f1f) and Nightfox foreground (#cdcecf)")
 
 -- 3. Verify key syntax highlights
 local comment_hl = vim.api.nvim_get_hl(0, { name = "Comment" })

@@ -1,23 +1,24 @@
 ---@class VclsNeonPalette
 --- Color palette definition for vcls-neon.nvim
---- Main background & accents: Jellybeans (#151515)
+--- Main background: Arctic (#1f1f1f)
 --- Foreground: Nightfox (#cdcecf fg1)
+--- Accents & Syntax: Jellybeans
 local M = {}
 
 ---@type table
 M.colors = {
   -- =========================================================================
-  -- BACKGROUND COLORS (Jellybeans shades)
+  -- BACKGROUND COLORS (Arctic shades - softer, comfortable dark)
   -- =========================================================================
   bg = {
-    main = "#151515",      -- Jellybeans: Canonical dark charcoal background
-    dark = "#101010",      -- Jellybeans: Popups, statusline, deep dark shade
-    alt = "#121212",       -- Jellybeans: Alternate deep background
-    dim = "#1a1a1a",       -- Jellybeans: Inactive window background
-    line = "#1c1c1c",      -- Jellybeans: CursorLine, CursorColumn
-    selection = "#404040", -- Jellybeans: Visual selection
-    border = "#535d66",    -- Jellybeans: Window borders, VertSplit
-    float = "#1c1c1c",     -- Jellybeans: Floating window background
+    main = "#1f1f1f",      -- Arctic norm_bg: Primary editor background
+    dark = "#181818",      -- Arctic black4: Popups, statusline, deep dark shade
+    alt = "#1c1c1c",       -- Arctic: Alternate deep background
+    dim = "#252526",       -- Arctic black2: Inactive window / sidebar background
+    line = "#282828",      -- Arctic black3: CursorLine, CursorColumn
+    selection = "#343a41", -- Arctic: Visual selection background
+    border = "#454545",    -- Arctic float_border_fg: Window borders, separators
+    float = "#252526",     -- Arctic black2: Floating window background
   },
 
   -- =========================================================================

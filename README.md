@@ -1,8 +1,8 @@
-# vcls-neon.nvim 🍬🦊
+# vcls-neon.nvim ❄️🦊
 
 A modern, highly modular Neovim colorscheme written entirely in Lua.
 
-**vcls-neon** blends the rich, warm dark palette of **Jellybeans** (`#151515`) with the crisp, balanced foreground shades of **Nightfox** (`#cdcecf`). Its modular structure makes it effortless to customize and expand accent, syntax, and plugin colors.
+**vcls-neon** blends the clean, comfortable dark background of **Arctic** (`#1f1f1f`) with the syntax palette of **Jellybeans** and the crisp foreground shades of **Nightfox** (`#cdcecf`). Its modular structure makes it effortless to customize and expand accent, syntax, and plugin colors.
 
 ---
 
@@ -10,10 +10,12 @@ A modern, highly modular Neovim colorscheme written entirely in Lua.
 
 | Role | Color | Hex | Origin |
 | :--- | :--- | :--- | :--- |
-| **Main Background** | ![#151515](https://via.placeholder.com/15/151515/000000?text=+) `#151515` | `#151515` | **Jellybeans** (main charcoal bg) |
-| **Dark / Popups BG** | ![#101010](https://via.placeholder.com/15/101010/000000?text=+) `#101010` | `#101010` | **Jellybeans** |
-| **Line / Fold BG** | ![#1c1c1c](https://via.placeholder.com/15/1c1c1c/000000?text=+) `#1c1c1c` | `#1c1c1c` | **Jellybeans** (`CursorLine`) |
-| **Visual Selection** | ![#404040](https://via.placeholder.com/15/404040/000000?text=+) `#404040` | `#404040` | **Jellybeans** (`Visual`) |
+| **Main Background** | ![#1f1f1f](https://via.placeholder.com/15/1f1f1f/000000?text=+) `#1f1f1f` | `#1f1f1f` | **Arctic** (`norm_bg`) |
+| **Dark / Popups BG** | ![#181818](https://via.placeholder.com/15/181818/000000?text=+) `#181818` | `#181818` | **Arctic** (`black4`) |
+| **Line / Fold BG** | ![#282828](https://via.placeholder.com/15/282828/000000?text=+) `#282828` | `#282828` | **Arctic** (`black3` / `CursorLine`) |
+| **Visual Selection** | ![#343a41](https://via.placeholder.com/15/343a41/000000?text=+) `#343a41` | `#343a41` | **Arctic** (`SelectionHighlight`) |
+| **Float / Sidebar BG** | ![#252526](https://via.placeholder.com/15/252526/000000?text=+) `#252526` | `#252526` | **Arctic** (`black2`) |
+| **Borders / Separators** | ![#454545](https://via.placeholder.com/15/454545/000000?text=+) `#454545` | `#454545` | **Arctic** (`FloatBorder`) |
 | **Main Foreground** | ![#cdcecf](https://via.placeholder.com/15/cdcecf/000000?text=+) `#cdcecf` | `#cdcecf` | **Nightfox** (`fg1`) |
 | **Bright Foreground** | ![#d6d6d7](https://via.placeholder.com/15/d6d6d7/000000?text=+) `#d6d6d7` | `#d6d6d7` | **Nightfox** (`fg0`) |
 | **Muted Foreground** | ![#aeafb0](https://via.placeholder.com/15/aeafb0/000000?text=+) `#aeafb0` | `#aeafb0` | **Nightfox** (`fg2`) |

@@ -9,11 +9,11 @@ local M = {}
 M.config = {
   theme_name = "vcls-neon",
   active = true,
-  background = "#151515", -- Jellybeans bg
+  background = "#1f1f1f", -- Arctic norm_bg
   foreground = "#cdcecf", -- Nightfox fg1
   count = 42,
   ratio = 3.14159,
-  tags = { "neovim", "lua", "colorscheme", "jellybeans", "nightfox" },
+  tags = { "neovim", "lua", "colorscheme", "arctic", "jellybeans", "nightfox" },
 }
 
 --- Calculate stats
